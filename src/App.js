@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+//Flexpa Login System using Create-React-App
+import { FlexpaLogin } from "@flexpa/login"
 
-function App() {
+function App() 
+{
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+  <div className = "App">
+    <FlexpaLogin sandbox>
+      <header>
+        <div className="text-3xl font-bold">Health Plan Verified</div>
       </header>
-    </div>
+    </FlexpaLogin>
+  </div>
   );
+
 }
 
 export default App;
